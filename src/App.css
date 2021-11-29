@@ -1,3 +1,5 @@
+/*
+
 *{ 
     box-sizing: border-box;
 }
@@ -33,9 +35,9 @@ height: 100vh;
   }
   .deathStar{
       /* width: 200px;
-      height: 200px;*/
+      height: 200px; 
       position: relative;
       top:-10vh;
       left: -33vh;
       padding: 5%;
-  }
+  } */
