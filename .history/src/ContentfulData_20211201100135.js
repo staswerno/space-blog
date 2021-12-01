@@ -1,8 +1,7 @@
 import { Box, Typography, Paper } from "@mui/material";
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { client } from "./client";
-import Posts from "./components/Posts";
+import { marked } from "marked";
 
 export default class ContentfulDataComp extends React.Component {
   state = {
@@ -14,9 +13,6 @@ export default class ContentfulDataComp extends React.Component {
       .getEntries()
       .then((response) => {
         console.log(response);
-        this.setState({
-          articles: response.items,
-        });
       })
       .catch(console.error);
   }
@@ -24,10 +20,24 @@ export default class ContentfulDataComp extends React.Component {
   render() {
     return (
       <>
-              <div className="wrapper">
-                <Posts posts={this.state.articles} />
-              </div>
+        <Box m={2}>
+          <Paper>
+            <Typography>
+              <Posts posts={this.state.articles} />
+            </Typography>
+          </Paper>
+        </Box>
       </>
     );
   }
 }
+
+const Posts = ({ posts }) => {
+  return (
+    <div>
+      {posts.map((article, index) => (
+        <Post article={article} key={index} />
+      ))}
+    </div>
+  );
+};
