@@ -1,0 +1,43 @@
+/*
+
+*{ 
+    box-sizing: border-box;
+}
+.App{
+text-align: center;
+background-image: url('./Images/spaceBackground.jpg');
+background-size: cover;
+height: 100vh;
+}
+
+.typewriter {
+   width:max-content;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .15em; 
+    animation: 
+      typing 5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:orange ; }
+  }
+  
+  .title{
+      color: white;
+  }
+  .deathStar{
+      /* width: 200px;
+      height: 200px; 
+      position: relative;
+      top:-10vh;
+      left: -33vh;
+      padding: 5%;
+  } */

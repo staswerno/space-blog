@@ -26,7 +26,7 @@ export default class ContentfulDataComp extends React.Component {
       <>
         <Box m={2}>
           <Paper>
-            <Typography>
+            <Typography className="container">
               <div className="wrapper">
                 <Posts posts={this.state.articles} />
               </div>
