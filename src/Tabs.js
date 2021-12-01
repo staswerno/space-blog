@@ -32,16 +32,28 @@ export default function Tabs() {
                   value="1"  
                   component={Link}  
                   to={`/live_stuff/feed_${value}`}
+                  sx={{':hover': {
+                    color: 'secondary.main'
+                      },
+                      }}
             />
             <Tab  label="Live Two" 
                   value="2"  
                   component={Link} 
                   to={`/live_stuff/feed_${value}`}
+                  sx={{':hover': {
+                      color: 'secondary.main'
+                        },
+                      }}
             />
             <Tab  label="Live Three" 
                   value="3"
                   component={Link}   
                   to={`/live_stuff/feed_${value}`}
+                  sx={{':hover': {
+                    color: 'secondary.main'
+                      },
+                      }}
             />
             <Box  ml="auto" style={{ display: "flex", alignItems: "center" }}  >
             <IconButton        

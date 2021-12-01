@@ -1,19 +1,16 @@
-import { Grid, Paper, Typography } from '@mui/material';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-
-
-import './App.css'
+import { useState } from 'react';
 
 import LiveDataComp from './LiveData';
 import ContentfulDataComp from './ContentfulData';
 import AppBarComp from './AppBar';
-//import { Grid } from '@mui/material';
+
+import { Grid } from '@mui/material';
 import { CssBaseline } from '@mui/material';
-// import { theme } from "./MuiStyle";
-//import { ThemeProvider } from '@mui/material/styles';
-import { useState } from 'react';
-//import { createTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 import { grey, deepPurple, teal } from '@mui/material/colors';
+
+import './App.css'
 
 function App() {
   const [mode, setMode] = useState('light');

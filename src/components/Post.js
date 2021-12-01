@@ -28,7 +28,13 @@ const Post = ({ article }) => {
         dangerouslySetInnerHTML={{ __html: postDescription }}
       ></section>
         </Typography>
-        <Button variant="outlined" href={link} alt={title} component={Link}>READ MORE</Button>
+        <Button variant="outlined" href={link} alt={title} component={Link}
+                sx={{ ':hover': {
+                                bgcolor: 'primary.main', 
+                                color: 'white',
+                                } 
+                    }}
+        >READ MORE</Button>
 
       </CardContent>
   
