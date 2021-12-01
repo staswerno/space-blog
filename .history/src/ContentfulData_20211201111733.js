@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-import { Box, Typography, Paper, Button } from '@mui/material';
-=======
 import { Box, Typography, Paper } from "@mui/material";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { client } from "./client";
 import Posts from "./components/Posts";
->>>>>>> master
 
 export default class ContentfulDataComp extends React.Component {
   state = {
@@ -28,27 +24,31 @@ export default class ContentfulDataComp extends React.Component {
   render() {
     return (
       <>
-        <Box m={2}>
-<<<<<<< HEAD
-        <Paper>
-        <div style={{padding: 10}}>
-        <Typography>
-            Contentful Data Here!
-        </Typography>
-        <Button variant="outlined">Outlined</Button>
+        <div className="App">
+          <div className="container">
+            <header>
+              <div className="wrapper">
+                <span>hamburg pubs</span>
+              </div>
+            </header>
+            <main>
+              <div className="wrapper">
+                <Posts posts={this.state.articles} />
+              </div>
+            </main>
+          </div>
         </div>
-        </Paper>
-        
-=======
+        /*
+        <Box m={2}>
           <Paper>
-            <Typography>
+            <Typography className="container">
               <div className="wrapper">
                 <Posts posts={this.state.articles} />
               </div>
             </Typography>
           </Paper>
->>>>>>> master
         </Box>
+        */
       </>
     );
   }
