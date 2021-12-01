@@ -24,15 +24,31 @@ export default class ContentfulDataComp extends React.Component {
   render() {
     return (
       <>
+        <div className="App">
+          <div className="container">
+            <header>
+              <div className="wrapper">
+                <span>hamburg pubs</span>
+              </div>
+            </header>
+            <main>
+              <div className="wrapper">
+                <Posts posts={this.state.articles} />
+              </div>
+            </main>
+          </div>
+        </div>
+        /*
         <Box m={2}>
           <Paper>
-            <Typography>
+            <Typography className="container">
               <div className="wrapper">
                 <Posts posts={this.state.articles} />
               </div>
             </Typography>
           </Paper>
         </Box>
+        */
       </>
     );
   }
