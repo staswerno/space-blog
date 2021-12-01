@@ -1,9 +1,12 @@
+import { Grid, Paper, Typography } from '@mui/material';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+
 import './App.css'
+
 import LiveDataComp from './LiveData';
 import ContentfulDataComp from './ContentfulData';
 import AppBarComp from './AppBar';
-import { Grid, Paper, Typography } from '@mui/material';
-import { ThemeProvider, createTheme } from '@mui/material/styles';;
 
 const theme = createTheme({
   palette: {
@@ -32,8 +35,7 @@ function App() {
         rowSpacing={3}
         justifyContent="space-around"
         >
-        <Grid item xs={12} md={4}>
-          <Grid item><LiveDataComp /></Grid>
+        <Grid item xs={12} md={5}>
           <Grid item><LiveDataComp /></Grid>
         </Grid>
         <Grid item xs={12} md={7}>
