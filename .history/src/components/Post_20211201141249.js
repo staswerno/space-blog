@@ -11,14 +11,12 @@ const Post = ({ article }) => {
       <h2>{title}</h2>
       <p>{visit}</p>
       {image && <img src={image.fields.file.url} alt={title} title={title} />}
-      <section
-        dangerouslySetInnerHTML={{ __html: postDescription }}
-      ></section>{" "}
       {
         <a href={link} alt={title}>
           <button>Read more</button>
         </a>
       }
+      <section dangerouslySetInnerHTML={{ __html: postDescription }} />
     </div>
   );
 };
