@@ -1,14 +1,16 @@
-import './App.css'
+import { useState } from 'react';
+
 import LiveDataComp from './LiveData';
 import ContentfulDataComp from './ContentfulData';
 import AppBarComp from './AppBar';
+
 import { Grid } from '@mui/material';
 import { CssBaseline } from '@mui/material';
-// import { theme } from "./MuiStyle";
 import { ThemeProvider } from '@mui/material/styles';
-import { useState } from 'react';
 import { createTheme } from '@mui/material/styles';
 import { grey, deepPurple, teal } from '@mui/material/colors';
+
+import './App.css'
 
 function App() {
   const [mode, setMode] = useState('light');
@@ -83,8 +85,7 @@ function App() {
         rowSpacing={0}
         justifyContent="space-around"
         >
-        <Grid item xs={12} md={4}>
-          <Grid item><LiveDataComp /></Grid>
+        <Grid item xs={12} md={5}>
           <Grid item><LiveDataComp /></Grid>
         </Grid>
         <Grid item xs={12} md={7}>
