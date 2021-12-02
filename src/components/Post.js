@@ -1,14 +1,16 @@
 import React from "react";
-import { Button, Paper, Box, Typography, Card, Link, CardContent, CardMedia } from '@mui/material'; 
+import { Button, Box, Typography, Card, Link, CardContent, CardMedia, Fade } from '@mui/material'; 
 import { marked } from "marked";
-import "./post.css";
 
-const Post = ({ article }) => {
-  console.log(article);
+const Post = ({ article, index }) => {
   const { title, visit, link, image, description } = article.fields;
+
+  const timeDelay = (parseInt(`${index}700`));
+
   const postDescription = marked(description);
   return (
     <Box m={2} >
+      <Fade in={true} timeout={timeDelay}>
       <Card >
       <CardMedia
         component="img"
@@ -39,6 +41,7 @@ const Post = ({ article }) => {
       </CardContent>
   
     </Card>
+    </Fade>
     </Box>
   );
 };

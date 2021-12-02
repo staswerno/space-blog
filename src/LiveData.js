@@ -1,10 +1,11 @@
-import { Box, Typography, Paper, tableFooterClasses } from '@mui/material';
+import { Box, Typography, Paper, Fade, tableFooterClasses } from '@mui/material';
 import { Link, Outlet } from 'react-router-dom';
 
 export default function LiveDataComp () {
     
     return (
     <Box  m={2}>
+        <Fade in={true} timeout={700}>
         <Paper >
         <Typography 
             component={Link} 
@@ -19,8 +20,9 @@ export default function LiveDataComp () {
             Check out our live feed! 
         </Typography>
         </Paper>
-
+        </Fade>
         <Outlet/>
+        
     </Box>
     )
 }
