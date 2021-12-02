@@ -1,5 +1,5 @@
 import {useState} from 'react';
-
+import { Fade } from '@mui/material';
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
@@ -18,7 +18,9 @@ export default function Tabs() {
   };
 
   return (
+    <Fade in={true} timeout={700}>
     <Box sx={{ width: '100%', typography: 'body1' }} >
+      
       <TabContext value={value}>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
           <TabList 
@@ -65,10 +67,13 @@ export default function Tabs() {
             </IconButton>
             </Box>
           </TabList>
+          
         </Box>
         <Outlet/>
       </TabContext>
+      
     </Box>
+    </Fade>
   );
 }
 
