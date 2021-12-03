@@ -25,8 +25,8 @@ export default function Tabs() {
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
           <TabList 
             selectionFollowsFocus
-            textColor="secondary"
-            indicatorColor="secondary" 
+            textColor="primary"
+            indicatorColor="priamry" 
             onChange={handleChange} 
             aria-label="Live tabs"
           >
@@ -35,16 +35,16 @@ export default function Tabs() {
                   component={Link}  
                   to={`/live_stuff/feed_${value}`}
                   sx={{':hover': {
-                    color: 'secondary.main'
+                    color: 'info.main'
                       },
                       }}
             />
-            <Tab  label="Live Two" 
+            <Tab  label="Hottest Spatial News!!" 
                   value="2"  
                   component={Link} 
                   to={`/live_stuff/feed_${value}`}
                   sx={{':hover': {
-                      color: 'secondary.main'
+                      color: 'info.main'
                         },
                       }}
             />
@@ -53,7 +53,7 @@ export default function Tabs() {
                   component={Link}   
                   to={`/live_stuff/feed_${value}`}
                   sx={{':hover': {
-                    color: 'secondary.main'
+                    color: 'info.main'
                       },
                       }}
             />
