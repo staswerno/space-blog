@@ -49,6 +49,11 @@ function App() {
                     dark: teal[300],
                 },
                 divider: teal[200],
+                info: {
+                  main: teal[200],
+                  light: teal[100],
+                  dark: teal[300],
+              },
                 
             background: {
                 default: '#121212',
@@ -94,7 +99,7 @@ function App() {
       </Grid>
       </main>
       <footer>
-
+   
       </footer>
     </div>
     </ThemeProvider>

@@ -10,10 +10,10 @@ export default function LiveDataComp () {
         <Typography 
             component={Link} 
             to="/live_stuff" 
-            color="primary" 
+            color="info.dark" 
             style={{textDecoration: 'none'}}
             sx={{':hover': {
-                color: 'secondary.main'
+                color: 'info.light'
                 },
                 }}
         >
