@@ -1,4 +1,5 @@
 import {useState} from 'react';
+
 import { Fade } from '@mui/material';
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
@@ -50,7 +51,7 @@ export default function Tabs() {
                         },
                       }}
             />
-            <Tab  label="Live Three" 
+            <Tab  label="ISS Live" 
                   value="3"
                   component={Link}   
                   to={`/live_stuff/feed_${value}`}
