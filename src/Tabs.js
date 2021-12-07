@@ -28,6 +28,8 @@ export default function Tabs() {
             textColor="primary"
             indicatorColor="priamry" 
             onChange={handleChange} 
+            variant="scrollable"
+            scrollButtons="auto"
             aria-label="Live tabs"
           >
             <Tab  label="Live One" 

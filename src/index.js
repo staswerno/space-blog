@@ -22,7 +22,7 @@ ReactDOM.render(
           <Route path="live_stuff" element={<Tabs/>}>
             <Route index element={
                       <main style={{ padding: '1rem' }}>
-                        <Typography>Please select a LiveFeed from the Tabs</Typography>
+                        <Typography >Please select a LiveFeed from the Tabs</Typography>
                       </main>
                     }
             /> 
