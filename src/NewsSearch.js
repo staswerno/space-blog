@@ -33,7 +33,7 @@ export default function NewsSearch() {
             </Box>
             {search && <iframe src={search}
                                 width= "100%"
-                                height="400vh"    
+                                height="600vh"    
                                 key={search}  
                         >
                         </iframe>        
