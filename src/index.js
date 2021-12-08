@@ -12,7 +12,7 @@ import Tab from "./Tab";
 import ErrorRoute from "./ErrorRoute";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <CssBaseline />
     <ThemeProvider theme={theme}>
       <Routes>
