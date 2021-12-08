@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { Typography } from "@mui/material";
 import { CssBaseline } from "@mui/material";
 import { theme } from "./MuiStyle";
