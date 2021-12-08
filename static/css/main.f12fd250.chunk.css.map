@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/ErrorRoute.css"],"names":[],"mappings":"AAAA,OACI,uDAAA,CACA,WAAY,CACZ,WAAY,CACZ,iCAAkC,CAClC,QACJ","file":"main.f12fd250.chunk.css","sourcesContent":[".astro{\n    background-image: url(\"./Images/astro.jpeg\");\n    width: 100vw;\n    height: 90vh;\n    background-size: contain no-repeat; \n    margin:0;\n}\n"]}
