@@ -1,5 +1,5 @@
 {
-  "name": "space-project",
+  "name": "space-blog",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "homepage": "https://garciamarin.github.io/space-project/",
+    "homepage": "https://staswerno.github.io/space-blog/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
