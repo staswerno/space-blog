@@ -16,7 +16,7 @@ ReactDOM.render(
     <CssBaseline />
     <ThemeProvider theme={theme}>
       <Routes>
-        <Route path="/" element={<App />}>
+        <Route exact path="/" element={<App />}>
           <Route path="live_stuff" element={<Tabs />}>
             <Route
               index
