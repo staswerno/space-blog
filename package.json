@@ -1,5 +1,6 @@
 {
   "name": "space-blog",
+  "homepage": "https://staswerno.github.io/space-blog/",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -24,7 +25,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "homepage": "https://staswerno.github.io/space-blog/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
