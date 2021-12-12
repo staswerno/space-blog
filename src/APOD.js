@@ -27,7 +27,7 @@ export default function APOD() {
 				gutterBottom="true"
 				variant="subtitle1"
 			>
-				Astronomy Picture of the Day
+				Today's Astronomy Picture of the Day
 			</Typography>
 			{isLoading ? (
 				<Fade in={true} timeout={700}>
@@ -52,14 +52,20 @@ export default function APOD() {
 					</Link>
 				</Fade>
 			)}
-			<Typography textAlign="center" mt={2}>
+			<Typography textAlign="center" mt={2} variant="subtitle2">
 				<Link
 					href="https://apod.nasa.gov/apod/astropix.html"
 					target="_blank"
 					variant="body2"
 				>
-					More Info
+					{pic.title}
 				</Link>
+			</Typography>
+			<Typography textAlign="center" mt={1} variant="body2">
+				Copyright {pic.copyright}
+			</Typography>
+			<Typography mt={2} variant="body2" align="justify" color="text.secondary">
+				{pic.explanation}
 			</Typography>
 		</>
 	);
